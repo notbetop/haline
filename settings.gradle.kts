@@ -12,5 +12,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "haline"
+rootProject.name = "haline-root"
 
+include(":haline")
+include(":example")
