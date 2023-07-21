@@ -1,7 +1,9 @@
 package top.notbe.haline.switch
 
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.VisibilityThreshold
 import androidx.compose.animation.core.animateDpAsState
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.hoverable
@@ -21,6 +23,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.PointerIcon
 import androidx.compose.ui.input.pointer.pointerHoverIcon
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import top.notbe.haline.fundation.clickable
@@ -55,7 +58,7 @@ fun Switch(
     )
 
     val dotOffset by animateDpAsState(
-        targetValue = if (checked) lineSize.width - (dotSize / 4 * 2) else 0.dp,
+        targetValue = if (checked) lineSize.width - (dotSize / 4 * 2) else 0.dp
     )
     val dotShadowElevation by animateDpAsState(
         if (isHover) 10.dp else

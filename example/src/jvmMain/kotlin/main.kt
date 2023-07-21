@@ -3,7 +3,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.BasicText
-import androidx.compose.material3.MaterialTheme
 import top.notbe.haline.text.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -56,19 +55,19 @@ fun Buttons(){
                     colors = it,
                     onClick = {  }
                 ) {
-                    BasicText("Hello, world")
+                    Text("Hello, world")
                 }
                 MediumButton(
                     colors = it,
                     onClick = {  }
                 ) {
-                    BasicText("Hello, world")
+                    Text("Hello, world")
                 }
                 SmallButton(
                     colors = it,
                     onClick = {  }
                 ) {
-                    BasicText("Hello")
+                    Text("Hello")
                 }
 
                 MediumButton(
@@ -76,7 +75,7 @@ fun Buttons(){
                     disable = true,
                     onClick = {  }
                 ) {
-                    BasicText("Hello, world")
+                    Text("Hello, world")
                 }
             }
         }
