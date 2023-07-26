@@ -1,5 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose")
@@ -19,7 +17,7 @@ kotlin {
     sourceSets {
         val jvmMain by getting {
             dependencies {
-                implementation(compose.desktop.common){
+                implementation(compose.desktop.common) {
                     exclude("org.jetbrains.compose.material")
                 }
                 println()

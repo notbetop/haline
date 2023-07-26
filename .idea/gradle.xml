@@ -13,31 +13,6 @@
           </set>
         </option>
       </GradleProjectSettings>
-      <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT">
-            <builds>
-              <build path="$PROJECT_DIR$" name="haline-root">
-                <projects>
-                  <project path="$PROJECT_DIR$" />
-                  <project path="$PROJECT_DIR$/example" />
-                  <project path="$PROJECT_DIR$/haline" />
-                </projects>
-              </build>
-            </builds>
-          </compositeBuild>
-        </compositeConfiguration>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/peter-record" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/example" />
-            <option value="$PROJECT_DIR$/haline" />
-            <option value="$PROJECT_DIR$/peter-record" />
-            <option value="$PROJECT_DIR$/peter-record/app" />
-          </set>
-        </option>
-      </GradleProjectSettings>
     </option>
   </component>
 </project>
